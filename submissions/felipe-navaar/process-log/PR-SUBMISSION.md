@@ -8,7 +8,7 @@
 ## Verificações executadas
 
 - Os quatro arquivos de código, quatro módulos de teste, configuração e cinco CSVs estão no pacote.
-- Na cópia empacotada, `.venv` do projeto executou `python -m pytest -q -p no:cacheprovider --basetemp <pasta temporária local>` e retornou `15 passed in 1.18s`.
+- Na cópia empacotada, a suíte atualizada executou `python -m pytest -q -p no:cacheprovider --basetemp <pasta temporária local>` e retornou `17 passed in 1.86s`.
 - `python -B -c "import app; print('app importado com sucesso')"` retornou `app importado com sucesso`.
 - Streamlit iniciou a cópia empacotada na porta local 8507. `Invoke-WebRequest` retornou HTTP 200; a interface carregada mostrou 2.089 oportunidades abertas e 1.589 de alta prioridade. O servidor foi encerrado após a conferência.
 - O README tem instruções de instalação e execução e foi conferido quanto aos links locais.
@@ -16,14 +16,14 @@
 ## Erros encontrados e correções
 
 - A primeira cópia de módulos com wildcard combinado a `Copy-Item -LiteralPath` não encontrou os arquivos. A operação foi refeita enumerando arquivos com `Get-ChildItem`; os arquivos esperados apareceram no pacote.
-- O primeiro comando de teste apontou para `.venv` relativo dentro da pasta de submissão, onde ainda não há ambiente virtual. Reexecutei a suíte com o Python do ambiente já instalado no projeto e a partir da cópia empacotada; os 15 testes passaram.
+- O primeiro comando de teste apontou para `.venv` relativo dentro da pasta de submissão, onde ainda não há ambiente virtual. Reexecutei a suíte com o Python do ambiente já instalado no projeto e a partir da cópia empacotada; os 17 testes passaram.
 - A tentativa de clonar o repositório oficial recebeu `SEC_E_NO_CREDENTIALS` do provedor de segurança do Windows. O conector GitHub não oferece ação para criar forks; criei o fork pela página oficial, já aberta na sessão autenticada.
 
 ## Estado ao encerrar a preparação local (registro inicial)
 
 Naquele ponto do processo, nenhum fork, branch, commit, push ou Pull Request havia sido criado. O pacote estava preparado localmente, aguardando a etapa de envio. A sessão autenticada foi usada em seguida; nenhuma credencial foi registrada no process log.
 
-**Ponto de atenção de produto preservado no README:** a tela final retirou explicações da prioridade conforme decisão registrada; o desafio pede que o vendedor entenda o motivo da prioridade. A divergência foi descrita como limitação, sem alteração da política ou da interface nesta preparação.
+**Correção de produto:** a ficha da oportunidade exibe os fatores calculados pelo backend em linguagem comercial, mantendo a política e o score centralizados no motor de regras.
 
 ## Continuidade do envio
 
@@ -44,4 +44,4 @@ Naquele ponto do processo, nenhum fork, branch, commit, push ou Pull Request hav
 
 - Comparei o SHA Git dos 38 arquivos locais com os blobs correspondentes no PR: todos os 38 coincidiram byte a byte.
 - Na revisão do conteúdo, corrigi uma recomendação desatualizada no README que ainda dizia para concluir a organização da submissão.
-- A correção e este registro seguem na branch existente; a limitação de explicabilidade do score permanece descrita no README, sem alteração da regra ou da interface.
+- A correção de explicabilidade e este registro seguem na branch existente; o README descreve a experiência final, sem ressalva pendente sobre a exibição dos motivos da prioridade.

@@ -36,17 +36,17 @@ Organizei o trabalho para que cada etapa tivesse uma entrega verificável. Usei 
 
 ### Resultados / Findings
 
-- Dashboard com filtros, fila de oportunidades, gráficos, detalhes e exportação em CSV.
+- Dashboard com filtros, fila de oportunidades, gráficos, detalhes, motivos da prioridade e exportação em CSV.
 - Base de 8.800 oportunidades, com 2.089 abertas para priorização.
-- Documentação de desenvolvimento com 15 testes aprovados e publicações registradas no GitHub.
+- Documentação de desenvolvimento com 17 testes aprovados e publicações registradas no GitHub.
 
 ### Recomendações
 
-Revisar a explicação da prioridade na interface. Para evoluir o produto, incorporar histórico de atividades e validar sua utilidade com vendedores.
+Validar a utilidade dos motivos da prioridade com vendedores. Para evoluir o produto, incorporar histórico de atividades e medir o uso da fila.
 
 ### Limitações
 
-A base é histórica e o score representa uma regra de prioridade. O projeto não demonstrou aumento de conversão ou receita. A versão final simplificou as explicações na interface, ponto que precisa ser reconciliado com a exigência de entendimento do score pelo vendedor.
+A base é histórica e o score representa uma regra de prioridade. O projeto não demonstrou aumento de conversão ou receita. A ficha de cada oportunidade apresenta os fatores calculados em linguagem comercial para que o vendedor entenda a prioridade sem depender da documentação técnica.
 
 ## Process Log — Como usei IA
 
