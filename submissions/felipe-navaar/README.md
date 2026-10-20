@@ -42,7 +42,7 @@ Organizei o trabalho para que cada etapa tivesse uma entrega verificável. Usei 
 
 ### Recomendações
 
-Concluir a organização da submissão e revisar a explicação da prioridade na interface. Para evoluir o produto, incorporar histórico de atividades e validar sua utilidade com vendedores.
+Revisar a explicação da prioridade na interface. Para evoluir o produto, incorporar histórico de atividades e validar sua utilidade com vendedores.
 
 ### Limitações
 

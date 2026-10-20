@@ -40,3 +40,8 @@ Naquele ponto do processo, nenhum fork, branch, commit, push ou Pull Request hav
 - A leitura remota após a última atualização encontrou um arquivo vazio (blob `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`). A causa foi um erro de sintaxe no comando PowerShell que deveria codificar o conteúdo local.
 - A primeira tentativa de reenvio parou localmente antes da chamada ao GitHub: o ambiente JavaScript não disponibiliza `atob`. Nenhuma alteração remota ocorreu nessa tentativa.
 - Na tentativa seguinte, validei no PowerShell que a ida e volta Base64 preservava os 4.728 bytes locais e reenviei o registro na mesma branch. A leitura posterior do arquivo remoto retornou 4.624 caracteres e confirmou que o conteúdo não estava vazio.
+## Auditoria após abertura do PR
+
+- Comparei o SHA Git dos 38 arquivos locais com os blobs correspondentes no PR: todos os 38 coincidiram byte a byte.
+- Na revisão do conteúdo, corrigi uma recomendação desatualizada no README que ainda dizia para concluir a organização da submissão.
+- A correção e este registro seguem na branch existente; a limitação de explicabilidade do score permanece descrita no README, sem alteração da regra ou da interface.
